@@ -1,0 +1,33 @@
+/* =========================main===================== */
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: #819B57;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.flex{
+    display: flex;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+/* =======================header========================= */
+header{
+    justify-content: center;
+    margin-top: 20px;
+}
+nav{
+    align-items: center;
+}
