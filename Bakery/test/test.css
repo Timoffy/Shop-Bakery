@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
 }
 
 .items{
@@ -20,12 +20,14 @@
 }
 
 
-
-/* .items:nth-child(2){
-    width: 80px;
-    height: 80px;
+ .items:nth-child(2){
+    width: 50px;
+    height: 50px;
+    align-self: center;
 }
-.items:nth-child(4){
+
+
+/* .items:nth-child(4){
     width: 60px;
     height: 60px;
 } */

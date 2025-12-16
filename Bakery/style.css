@@ -102,7 +102,7 @@ header {
   background-color: white;
   color: black;
 }
-
+/*======================= sec 1 =======================*/
 h1{
   font-size: 125px;
   font-weight: 900;
@@ -127,4 +127,45 @@ h1 span{
   font-size: 20px;
   font-weight: 300;
   color: white;
+}
+/*======================= sec 2 ====================*/
+.sec-2{
+  /* justify-content: center; */
+  justify-content: space-around;
+  margin-top: 100px;
+}
+.new-format{
+  font-weight: 900;
+  font-size: 64px;
+}
+
+.span-color span{
+  color: var(--main-color);
+}
+
+.up{
+  text-transform: uppercase;
+}
+
+/* ===================sec-3================== */
+
+.shefs{
+  font-weight: 900;
+  font-size: 64px;
+  text-align: center;
+}
+.shefs span{
+  color: var(--main-color);
+}
+
+.names{
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.sec-3-info{
+  justify-content: space-around;
+}
+.text-left{
+  margin-left: 30px;
 }
