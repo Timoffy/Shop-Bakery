@@ -50,6 +50,8 @@
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 :root {
@@ -70,18 +72,27 @@ a {
 }
 .container {
   width: 100%;
-  max-width: 90%;
+  /* max-width: 90%; */
+  /* padding: 0 24px; */
   margin: 0 auto;
 }
 /* =======================header========================= */
 header {
-  margin-top: 50px;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
 }
+
 .header-list li a {
   color: white;
-  margin-right: 50px;
+}
+.header-list {
+  color: white;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .header-list li a:hover {
@@ -102,8 +113,18 @@ header {
   background-color: white;
   color: black;
 }
+
+.header-nav-list {
+  flex: 1;
+}
+
+nav {
+  flex: 1;
+  justify-content: center;
+}
+
 /*======================= sec 1 =======================*/
-h1{
+h1 {
   font-size: 125px;
   font-weight: 900;
   text-align: center;
@@ -111,61 +132,120 @@ h1{
   margin-bottom: 300px;
   color: var(--main-color);
 }
-h1 span{
+h1 span {
   color: white;
 }
 
-.sec-list{
+.sec-list {
   gap: 200px;
   justify-content: center;
   background-color: var(--main-color);
   padding-top: 20px;
   padding-bottom: 20px;
-  
+  width: 100%;
 }
-.sec-list li a{
+.sec-list li a {
   font-size: 20px;
   font-weight: 300;
   color: white;
 }
 /*======================= sec 2 ====================*/
-.sec-2{
+.sec-2 {
   /* justify-content: center; */
   justify-content: space-around;
-  margin-top: 100px;
+  margin-top: 200px;
 }
-.new-format{
+.new-format {
   font-weight: 900;
   font-size: 64px;
 }
 
-.span-color span{
+.span-color span {
   color: var(--main-color);
 }
 
-.up{
+.up {
   text-transform: uppercase;
 }
 
 /* ===================sec-3================== */
 
-.shefs{
+.shefs {
+  margin-top: 200px;
   font-weight: 900;
   font-size: 64px;
   text-align: center;
+  margin-bottom: 100px;
 }
-.shefs span{
+.shefs span {
   color: var(--main-color);
 }
 
-.names{
+.names {
   font-weight: 600;
   font-size: 40px;
 }
 
-.sec-3-info{
+.sec-3-info {
   justify-content: space-around;
 }
-.text-left{
+.text-left {
   margin-left: 30px;
+}
+/* =========================sec-4==================== */
+
+.formats {
+  text-align: center;
+  font-weight: 900;
+  font-size: 84px;
+  margin-bottom: 50px;
+}
+
+.content {
+  justify-content: space-around;
+}
+.content div {
+  background-color: gray;
+  padding: 200px 30px 20px 30px;
+  border-radius: 10px;
+  color: white;
+}
+
+.sec-4 {
+  margin-top: 200px;
+  justify-content: space-around;
+}
+.sec-4 h2 {
+  font-weight: 900;
+  font-size: 64px;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.forms-text {
+  text-align: left;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+input {
+  color: #a18268;
+  border: 1px solid #a18268;
+  padding: 10px 400px 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+input:last-child {
+  background-color: var(--main-color);
+  color: white;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  /* margin-left: 55px; */
+}
+input:last-child:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid --main-color;
+  cursor: pointer;
 }
