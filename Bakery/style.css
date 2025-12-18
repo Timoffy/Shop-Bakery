@@ -59,7 +59,7 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  background-color: rgb(208, 208, 208);
+  background-color: rgb(231, 235, 214);
 }
 .flex {
   display: flex;
@@ -72,7 +72,7 @@ a {
 }
 .container {
   width: 100%;
-  /* max-width: 90%; */
+  max-width: 1480px;
   /* padding: 0 24px; */
   margin: 0 auto;
 }
@@ -85,11 +85,12 @@ header {
 
 .header-list li a {
   color: white;
+  gap: 20px;
 }
 .header-list {
   color: white;
   align-items: center;
-  gap: 30px;
+  gap: 64px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -137,9 +138,9 @@ h1 span {
 }
 
 .sec-list {
-  gap: 200px;
-  justify-content: center;
-  background-color: var(--main-color);
+  /* gap: 200px; */
+  justify-content: space-around;
+  display: flex;
   padding-top: 20px;
   padding-bottom: 20px;
   width: 100%;
@@ -148,6 +149,12 @@ h1 span {
   font-size: 20px;
   font-weight: 300;
   color: white;
+}
+.sec-menu{
+  background-color: var(--main-color);
+  max-width: 100%;
+  width: 100%;
+  gap: 40px;
 }
 /*======================= sec 2 ====================*/
 .sec-2 {
@@ -158,6 +165,10 @@ h1 span {
 .new-format {
   font-weight: 900;
   font-size: 64px;
+  margin-bottom: 50px;
+}
+.format-p{
+  margin-bottom: 50px;
 }
 
 .span-color span {
@@ -199,6 +210,8 @@ h1 span {
   font-weight: 900;
   font-size: 84px;
   margin-bottom: 50px;
+  margin-top: 200px;
+  margin-bottom: 100px;
 }
 
 .content {
