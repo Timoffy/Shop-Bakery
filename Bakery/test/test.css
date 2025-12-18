@@ -1,4 +1,4 @@
-*{
+/* *{
     box-sizing: border-box;
 }
 
@@ -6,12 +6,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-direction: column-reverse; */
-}
-
+} */
+/* 
 .items{
     flex-basis: 100px;
-    /* width: 100px; */
     height: 100px;
     background-color: rgb(238, 227, 176);
     border: 4px solid black;
@@ -24,10 +22,18 @@
     width: 50px;
     height: 50px;
     align-self: center;
-}
+} */
 
 
 /* .items:nth-child(4){
     width: 60px;
     height: 60px;
 } */
+
+
+/* hawod test */
+
+h1{
+    font-weight: 100;
+    box-shadow: 20px 5px 10px 10px gray;
+}
