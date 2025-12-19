@@ -84,7 +84,7 @@ header {
   justify-content: space-between;
   text-align: center;
   padding: 20px 40px;
-  position: absolute;
+  /* position: absolute; */
   /* padding-left: 100px; */
 }
 
@@ -192,6 +192,24 @@ h1 span {
 
 .up {
   text-transform: uppercase;
+}
+
+.carusel-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: black;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.carusel-button:hover{
+  background-color: #31261A;
+  fill: white;
 }
 
 /* ===================sec-3================== */
@@ -316,4 +334,12 @@ footer {
 }
 .footer-main a {
   color: white;
+}
+.adreass-icon{
+  fill: #FAF4EA;
+  /* stroke: red; just for testing */
+}
+.addreass-icon:hover{
+  fill: var(--main-color);
+  /* cursor: pointer; */
 }
