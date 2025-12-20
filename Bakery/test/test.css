@@ -1,32 +1,83 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-.parent{
-    padding: 20px;
-    border: 3px dotted black;
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
-.item.green{
-    /* position: relative; */
-    top: 20px;
-    left: 100px;
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    color: white;
+    margin-top: 300px;
+}
+
+.red {
+    background-color: red;
     width: 150px;
     height: 150px;
-    background-color: green;
-    overflow: auto;
-    color: aliceblue;
+    transform: translate(10px, 50px);
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-delay: 0.5s;
 }
-.item.blue{
-    /* position: absolute; */
+
+.red:hover {
+    background-color: pink;
+}
+
+.green {
+    background-color: green;
     width: 100px;
     height: 100px;
-    background-color: blue;
+    transform: rotate(50deg);
 }
-.item.red{
+.blue {
+    background-color: blue;
     width: 50px;
     height: 50px;
-    background-color: red;
+    transform: scale(3);
+    z-index: 1;
+}
+.orange {
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    z-index: -2;
+    transform: skew(84deg, 84deg);
+    opacity: 0.5;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        width: 100px;
+        height: 100px;
+        z-index: -2;
+        transform: skew(84deg, 84deg);
+        opacity: 0.5;
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        width: 100px;
+        height: 100px;
+        z-index: -2;
+        transform: skew(84deg, 84deg);
+        opacity: 0.5;
+    }
 }

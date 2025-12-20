@@ -14,21 +14,23 @@
 </head>
 
 <body>
-    <header class="flex container">
-        <div class="header-nav-list flex">
-            <a href="/">
-                <img src="/img/logo.svg" alt="logo">
-            </a>
-            <nav class="flex">
-                <ul class="header-list  flex">
-                    <li><a href="#">Наші традиції</a></li>
-                    <li><a href="#">Шеф-кухарі</a></li>
-                    <li><a href="#">Формати</a></li>
-                    <li><a href="#">Контакти</a></li>
-                </ul>
-            </nav>
+    <header class="flex">
+        <div class="heaeder-inner container flex">
+            <div class="header-nav-list flex">
+                <a href="/">
+                    <img src="/img/logo.svg" alt="logo">
+                </a>
+                <nav class="flex">
+                    <ul class="header-list  flex">
+                        <li><a href="#">Наші традиції</a></li>
+                        <li><a href="#">Шеф-кухарі</a></li>
+                        <li><a href="#">Формати</a></li>
+                        <li><a href="#">Контакти</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-btn modal-btn-open"><a href="#">Замовити дзвінок</a></div>
         </div>
-        <div class="header-btn modal-btn-open"><a href="#">Замовити дзвінок</a></div>
     </header>
     <main>
         <section class="back-header-img">
@@ -119,7 +121,7 @@
                     </div>
                 </div>
                 <button class="carusel-button" type="button">
-                    <svg width="16" height="16"> >
+                    <svg width="16" height="16">
                         <use href="/img/icons.svg#icon-arrow"></use>
                     </svg>
             </div>
@@ -129,7 +131,7 @@
                 <h2>Приєднуйся до <br>
                     мережі пекарень </h2>
                 <p class="forms-text">Заповни форму, щоб ми звʼязались з тобою!</p>
-                <form method="post">
+                <form method="post" class="sec-4-form">
                     <input type="text" placeholder="Ім’я" class="footer-input"><br>
                     <input type="number" placeholder="Телефон" class="footer-input"><br>
                     <input type="email" placeholder="Електронна пошта" class="footer-input"><br>
@@ -177,7 +179,7 @@
         </div>
     </footer>
     <div class="backdrop">
-        <div class="modal"> 
+        <div class="modal">
             <button type="button" class="modal-btn-close">
                 <svg>
                     <use href="/img/close_cross.svg#icon-cross" class="close"></use>
