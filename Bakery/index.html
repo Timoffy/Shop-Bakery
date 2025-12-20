@@ -28,7 +28,7 @@
                 </ul>
             </nav>
         </div>
-        <div class="header-btn"><a href="#">Замовити дзвінок</a></div>
+        <div class="header-btn modal-btn-open"><a href="#">Замовити дзвінок</a></div>
     </header>
     <main>
         <section class="back-header-img">
@@ -91,37 +91,37 @@
             <h2 class="formats">Формати</h2>
             <div class="sec-3-carusel container flex">
                 <button class="carusel-button" type="button">
-                <svg width="16" height="16"> >
-                    <use href="/img/icons.svg#icon-arrow"></use>
-                </svg>
-            </button>
-            <div class="sec3-cards content flex">
-                <div>
-                    <h3>Walrus</h3><br>
-                    <p>Площа: до 120 м2 <br>
-                        Меню: розширене меню <br>
-                        Штат: 2 продавці-касири, 2 пекарі, 2 <br>помічники пекаря, 2 офіціанти-різнороби<br>
-                        Посадкові місця: є</p>
+                    <svg width="16" height="16"> >
+                        <use href="/img/icons.svg#icon-arrow"></use>
+                    </svg>
+                </button>
+                <div class="sec3-cards content flex">
+                    <div>
+                        <h3>Walrus</h3><br>
+                        <p>Площа: до 120 м2 <br>
+                            Меню: розширене меню <br>
+                            Штат: 2 продавці-касири, 2 пекарі, 2 <br>помічники пекаря, 2 офіціанти-різнороби<br>
+                            Посадкові місця: є</p>
+                    </div>
+                    <div>
+                        <h3>Horseshoe</h3><br>
+                        <p>Площа: до 25 м2 <br>
+                            Меню: найпопулярніші позиції меню <br>
+                            Штат: 2 продавці-касири, 2 пекарі, 1 <br> помічник пекаря <br>
+                            Посадкові місця: відсутні</p>
+                    </div>
+                    <div>
+                        <h3>Handlebar</h3><br>
+                        <p>Площа: до 15 м2 <br>
+                            Меню: найпопулярніші позиції меню <br>
+                            Штат: 1 продавець, 1 пекар, 1 помічник <br> пекаря <br>
+                            Посадкові місця: відсутні</p>
+                    </div>
                 </div>
-                <div>
-                    <h3>Horseshoe</h3><br>
-                    <p>Площа: до 25 м2 <br>
-                        Меню: найпопулярніші позиції меню <br>
-                        Штат: 2 продавці-касири, 2 пекарі, 1 <br> помічник пекаря <br>
-                        Посадкові місця: відсутні</p>
-                </div>
-                <div>
-                    <h3>Handlebar</h3><br>
-                    <p>Площа: до 15 м2 <br>
-                        Меню: найпопулярніші позиції меню <br>
-                        Штат: 1 продавець, 1 пекар, 1 помічник <br> пекаря <br>
-                        Посадкові місця: відсутні</p>
-                </div>
-            </div>
-            <button class="carusel-button" type="button">
-                <svg width="16" height="16"> >
-                    <use href="/img/icons.svg#icon-arrow"></use>
-                </svg>
+                <button class="carusel-button" type="button">
+                    <svg width="16" height="16"> >
+                        <use href="/img/icons.svg#icon-arrow"></use>
+                    </svg>
             </div>
         </section>
         <section class="sec-4 flex container">
@@ -130,10 +130,10 @@
                     мережі пекарень </h2>
                 <p class="forms-text">Заповни форму, щоб ми звʼязались з тобою!</p>
                 <form method="post">
-                    <input type="text" placeholder="Ім’я"><br>
-                    <input type="number" placeholder="Телефон"><br>
-                    <input type="email" placeholder="Електронна пошта"><br>
-                    <input type="submit" value="Замовити дзвінок">
+                    <input type="text" placeholder="Ім’я" class="footer-input"><br>
+                    <input type="number" placeholder="Телефон" class="footer-input"><br>
+                    <input type="email" placeholder="Електронна пошта" class="footer-input"><br>
+                    <input type="submit" value="Замовити дзвінок" class="footer-input">
                 </form>
                 <p>Натискаючи на кнопку я погоджуюсь з <br>політикою конфіденційності</p>
             </div>
@@ -176,6 +176,26 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop">
+        <div class="modal"> 
+            <button type="button" class="modal-btn-close">
+                <svg>
+                    <use href="/img/close_cross.svg#icon-cross" class="close"></use>
+                </svg>
+            </button>
+            <h2>Замовити дзвінок</h2>
+            <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+            <form method="post">
+                <input type="text" placeholder="Ім’я" class="footer-input gap-betwen"><br>
+                <input type="number" placeholder="Телефон" class="footer-input gap-betwen"><br>
+                <input type="email" placeholder="Електронна пошта" class="footer-input gap-betwen"><br>
+                <input type="submit" value="Замовити дзвінок" class="footer-input-last gap-betwen"><br>
+            </form>
+            <p>Натискаючи на кнопку я погоджуюсь<br> з політикою конфіденційності</p>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
