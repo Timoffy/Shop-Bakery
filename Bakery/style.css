@@ -48,7 +48,7 @@
   src: url("../fonts/poppins-v24-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-* {
+*,*::after,*::before {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -182,6 +182,12 @@ h1 span {
   font-size: 64px;
   margin-bottom: 50px;
 }
+
+.sec3-cards{
+  gap: 80px;
+  /* justify-content: center; */
+}
+
 .format-p {
   margin-bottom: 50px;
 }
@@ -202,6 +208,7 @@ h1 span {
   height: 44px;
   border-radius: 50%;
   fill: black;
+  flex-shrink: 0;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
@@ -212,14 +219,22 @@ h1 span {
   fill: white;
 }
 
+.sec-3-carusel{
+  align-items: center;
+  justify-content: space-around;
+  /* gap: 100px; */
+}
+
 /* ===================sec-3================== */
 
 .shefs {
-  margin-top: 200px;
+  gap: 200px;
+  row-gap: 50px;
   font-weight: 900;
   font-size: 64px;
   text-align: center;
   margin-bottom: 200px;
+  flex-wrap: wrap;
 }
 .shefs span {
   color: var(--dark-green-color);
@@ -305,20 +320,37 @@ input {
   padding: 10px 400px 10px 20px;
   margin-bottom: 20px;
   border-radius: 5px;
+  background-color: transparent;
 }
 input:last-child {
+  font-weight: 600;
+  font-size: 18px;
   background-color: var(--main-color);
   color: white;
+  border: 3px solid var(--main-color);
   padding: 20px;
   align-items: center;
   justify-content: center;
+  display: flex;
+  text-align: center;
   /* margin-left: 55px; */
 }
 input:last-child:hover {
   background-color: white;
   color: black;
-  border: 1px solid --main-color;
+  border: 3px solid var(--main-color);
   cursor: pointer;
+}
+.form-place p:last-child{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+iframe{
+  flex-shrink: 0;
+  border: none;
+  border-radius: 10px;
 }
 /* ======================footer==================== */
 
@@ -326,17 +358,25 @@ footer {
   background-color: #31261a;
   background-image: url(/img/image\ 1564.png);
   margin-top: 100px;
+  padding-bottom: 20px;
 }
 .footer-main {
   padding-top: 50px;
   justify-content: space-around;
   color: #a18268;
 }
+.footer-main div:first-child  {
+  display: block;
+}
 .footer-main a {
   color: white;
+  flex-shrink: 0;
+  
 }
 .adreass-icon{
   fill: #FAF4EA;
+  margin-right: 20px;
+  margin-top: -40px;
   /* stroke: red; just for testing */
 }
 .addreass-icon:hover{
