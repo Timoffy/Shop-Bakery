@@ -1,0 +1,34 @@
+.sec3-cards {
+  gap: 80px;
+  /* justify-content: center; */
+}
+
+.sec3-cards div {
+  transition: transform 0.3s;
+  position: relative;
+}
+
+.sec3-cards div:hover {
+  transform: scale(1.05);
+}
+
+.format-p {
+  margin-bottom: 50px;
+}
+
+.puri{
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.span-color span {
+  color: var(--main-color);
+}
+
+.up {
+  text-transform: uppercase;
+}

@@ -1,0 +1,39 @@
+h1 {
+  font-size: 125px;
+  font-weight: 900;
+  text-align: center;
+  color: var(--main-color);
+}
+h1 span {
+  color: white;
+}
+
+.back-header-img {
+  background-image: url(/img/header-background.png);
+  padding: 272px 0;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  /* padding-top: 100px; */
+}
+
+.sec-list {
+  /* gap: 200px; */
+  justify-content: space-around;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+.sec-list li a {
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+}
+.sec-menu {
+  background-color: var(--main-color);
+  max-width: 100%;
+  width: 100%;
+  gap: 40px;
+}

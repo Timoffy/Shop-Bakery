@@ -9,8 +9,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <title>Bakery</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
@@ -99,6 +104,7 @@
                 </button>
                 <div class="sec3-cards content flex">
                     <div>
+                        <img src="/img/P’URI 09 1.png" alt="first puri photo" class="puri">
                         <h3>Walrus</h3><br>
                         <p>Площа: до 120 м2 <br>
                             Меню: розширене меню <br>
@@ -106,6 +112,7 @@
                             Посадкові місця: є</p>
                     </div>
                     <div>
+                        <img src="/img/P’URI 09 2.png" alt="second puri photo" class="puri">
                         <h3>Horseshoe</h3><br>
                         <p>Площа: до 25 м2 <br>
                             Меню: найпопулярніші позиції меню <br>
@@ -113,6 +120,7 @@
                             Посадкові місця: відсутні</p>
                     </div>
                     <div>
+                        <img src="/img/P’URI 09 3.png" alt="third puri photo" class="puri">
                         <h3>Handlebar</h3><br>
                         <p>Площа: до 15 м2 <br>
                             Меню: найпопулярніші позиції меню <br>
@@ -132,12 +140,13 @@
                     мережі пекарень </h2>
                 <p class="forms-text">Заповни форму, щоб ми звʼязались з тобою!</p>
                 <form method="post" class="sec-4-form">
-                    <input type="text" placeholder="Ім’я" class="footer-input"><br>
-                    <input type="number" placeholder="Телефон" class="footer-input"><br>
-                    <input type="email" placeholder="Електронна пошта" class="footer-input"><br>
+                    <input type="text" placeholder="Ім’я" class="footer-input" required><br>
+                    <input type="number" placeholder="Телефон" class="footer-input" required><br>
+                    <input type="email" placeholder="Електронна пошта" class="footer-input" required><br>
                     <input type="submit" value="Замовити дзвінок" class="footer-input">
                 </form>
-                <p>Натискаючи на кнопку я погоджуюсь з <br>політикою конфіденційності</p>
+                <p>Натискаючи на кнопку я погоджуюсь з <br><a href="#" class="politic">політикою конфіденційності</a>
+                </p>
             </div>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.163630435278!2d30.488698376404077!3d50.456677571593396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2spl!4v1765999585907!5m2!1sru!2spl"
@@ -162,12 +171,12 @@
                 <a href="#">Україна, м. Київ, <br>
                     вул. Січових Стрільців 54</a><br>
                 <a href="#">
-                    <svg class="adreass-icon" width="32">
+                    <svg class="adreass-icon" width="32" height="32">
                         <use href="/img/icons.svg#icon-facebook"></use>
                     </svg>
                 </a>
                 <a href="#">
-                    <svg class="adreass-icon" width="32">
+                    <svg class="adreass-icon" width="32" height="32">
                         <use href="/img/icons.svg#icon-instagram"></use>
                     </svg>
                 </a>
@@ -188,12 +197,12 @@
             <h2>Замовити дзвінок</h2>
             <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
             <form method="post">
-                <input type="text" placeholder="Ім’я" class="footer-input gap-betwen"><br>
-                <input type="number" placeholder="Телефон" class="footer-input gap-betwen"><br>
-                <input type="email" placeholder="Електронна пошта" class="footer-input gap-betwen"><br>
+                <input type="text" placeholder="Ім’я" class="footer-input gap-betwen" required><br>
+                <input type="number" placeholder="Телефон" class="footer-input gap-betwen" required><br>
+                <input type="email" placeholder="Електронна пошта" class="footer-input gap-betwen" required><br>
                 <input type="submit" value="Замовити дзвінок" class="footer-input-last gap-betwen"><br>
             </form>
-            <p>Натискаючи на кнопку я погоджуюсь<br> з політикою конфіденційності</p>
+            <p>Натискаючи на кнопку я погоджуюсь з<br> <a href="#" class="politic"> політикою конфіденційності</a></p>
         </div>
     </div>
 

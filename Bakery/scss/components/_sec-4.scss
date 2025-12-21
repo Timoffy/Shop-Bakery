@@ -1,0 +1,85 @@
+.shefs {
+  position: relative;
+  margin-top: 150px;
+  gap: 200px;
+  row-gap: 50px;
+  font-weight: 900;
+  font-size: 64px;
+  text-align: center;
+  margin-bottom: 200px;
+  flex-wrap: wrap;
+}
+.shefs span {
+  color: var(--dark-green-color);
+}
+.shefs span::before,
+.shefs span::after {
+  content: "";
+  border: 1px solid black;
+  width: 353px;
+  display: flex;
+  align-items: center;
+}
+
+.shefs span::before {
+  position: absolute;
+  left: 50px;
+  bottom: 24px;
+  /* top: 24px; */
+  /* top: 150px; */
+}
+.shefs span::after {
+  position: absolute;
+  right: 50px;
+  bottom: 24px;
+  /* top: 24px; */
+  /* top: 0px; */
+}
+
+.names {
+  font-weight: 600;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+.sec-3 img {
+  border-radius: 4px 4px 4px 200px;
+  box-shadow:
+    -16px 16px 0 0 var(--backgroud-color),
+    -16px 16px 0 2px #a18268;
+}
+
+.sec-3-info {
+  justify-content: space-around;
+}
+.text-left {
+  margin-left: 30px;
+}
+
+.carusel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: black;
+  flex-shrink: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.carusel-button:hover {
+  background-color: #31261a;
+  fill: white;
+  transition: color 0.3s;
+}
+
+.carusel-button:last-child {
+  transform: rotate(180deg);
+}
+
+.sec-3-carusel {
+  align-items: center;
+  justify-content: space-around;
+}

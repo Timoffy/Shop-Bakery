@@ -1,0 +1,91 @@
+.backdrop {
+  position: fixed;
+  padding: 10px 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
+}
+.modal {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  width: 100%;
+  max-width: 780px;
+  height: 100%;
+  max-height: 700px;
+  background-color: #faf4ea;
+  border-radius: 32px;
+  text-align: center;
+}
+.modal-btn-close {
+  position: absolute;
+  top: 38px;
+  right: 40px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--backgroud-color);
+  border: none;
+  cursor: pointer;
+}
+.backdrop.is-hiden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  /* background-color: rgba(0, 0, 0, 0); */
+}
+
+.modal::after {
+  content: "";
+  position: absolute;
+  background-image: url(/img/Group\ 4941.png);
+  right: 0;
+  bottom: 0;
+  width: 180px;
+  height: 240px;
+}
+
+.modal h2 {
+  font-weight: 900;
+  font-size: 44px;
+}
+.modal p {
+  padding-bottom: 50px;
+}
+
+.gap-betwen {
+  margin-bottom: 30px;
+  color: #a18268;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.footer-input-last {
+  background-color: var(--main-color);
+  color: white;
+  padding: 15px 40px;
+  border: 3px solid var(--main-color);
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  /* margin-bottom: 0; */
+}
+.footer-input-last:hover {
+  background-color: white;
+  color: var(--dark-green-color);
+  border: 3px solid --dark-green-color;
+}
+.modal input{
+  margin-top: 20px;
+}

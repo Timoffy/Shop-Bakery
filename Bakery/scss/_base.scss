@@ -1,0 +1,28 @@
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--backgroud-color);
+}
+.flex {
+  display: flex;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+}
