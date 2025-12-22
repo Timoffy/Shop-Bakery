@@ -6,9 +6,25 @@
   align-items: center;
   max-width: 100%;
   box-sizing: border-box;
-  /* justify-content: space-between; */
-  /* text-align: center; */
   padding: 20px 40px;
+
+  &-btn-first {
+    display: block;
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
+    }
+  }
+
+  &-btn-second {
+    display: none;
+    @media screen and (max-width: $bp-desktop) {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      padding: 20px 40px;
+      margin-top: 50px;
+    }
+  }
 
   &-list li a {
     color: white;
@@ -23,7 +39,6 @@
     gap: 64px;
     list-style: none;
     padding: 0;
-    margin: 0;
 
     @media screen and (max-width: $bp-desktop) {
       display: none;
@@ -44,8 +59,11 @@
     font-weight: 600;
     max-width: 100%;
 
-    @media screen and (max-width: $bp-desktop){
+    @media screen and (max-width: $bp-desktop) {
       display: none;
+    }
+    @media screen and (max-width: $bp-mobile) {
+      display: block;
     }
   }
   &-btn a:hover {
@@ -62,10 +80,10 @@
     align-items: center;
     justify-content: space-between;
   }
-  &__burger{
+  &__burger {
     display: none;
 
-    @media screen and (max-width: $bp-desktop){
+    @media screen and (max-width: $bp-desktop) {
       display: block;
       cursor: pointer;
       background-color: transparent;

@@ -7,51 +7,84 @@ footer {
   background-position: center top;
   background-size: cover;
   overflow: hidden;
-}
+  z-index: -1;
 
-footer::after,
-footer::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  background-repeat: no-repeat;
-  /* background-size: 100%; */
-}
+  @media screen and (max-width: $bp-tablet) {
+    margin-top: 0;
+  }
 
-footer::before {
-  background-image: url(/img/mbadvn-PhotoRoom\ 2.png);
-  width: 180px;
-  height: 120px;
-  /* bottom: 0; */
-  left: 0;
-}
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background-repeat: no-repeat;
+    z-index: -2;
+  }
+  &::before {
+    background-image: url(/img/adapt-bread.png);
+    width: 180px;
+    height: 100px;
+    left: 0;
 
-footer::after {
-  background-image: url(/img/vsbkdjvb-PhotoRoom\ 1.png);
-  width: 380px;
-  height: 190px;
-  right: 0;
+    @media screen and (max-width: $bp-tablet) {
+      background-image: url(/img/adapt-bread.png);
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &::after {
+    background-image: url(/img/vsbkdjvb-PhotoRoom\ 1.png);
+    width: 380px;
+    height: 190px;
+    right: 0;
+
+    @media screen and (max-width: $bp-tablet){
+      right: -10%;
+    }
+
+    @media screen and (max-width: $bp-mobile){
+      right: -35%;
+    }
+    
+  }
 }
 
 .footer-main {
   padding-top: 50px;
   justify-content: space-around;
   color: #a18268;
-}
-.footer-main div:first-child {
-  display: block;
-}
-.footer-main a {
-  color: white;
-  flex-shrink: 0;
+
+  @media screen and (max-width: $bp-tablet) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  & div:first-child {
+    display: block;
+  }
+  & a {
+    color: white;
+    flex-shrink: 0;
+
+    @media screen and (max-width: $bp-tablet) {
+      gap: 20px;
+      text-align: center;
+      flex-direction: column;
+    }
+  }
 }
 .adreass-icon {
   fill: #faf4ea;
   margin-right: 20px;
   margin-top: 10px;
-  /* stroke: red; just for testing */
-}
-.addreass-icon:hover {
-  fill: var(--main-color);
-  /* cursor: pointer; */
+  &:hover {
+    fill: var(--main-color);
+  }
 }

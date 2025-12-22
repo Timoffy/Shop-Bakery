@@ -9,6 +9,13 @@
   & div:hover {
     transform: scale(1.05);
   }
+
+}
+
+.sec3-cards div:not(:first-child){
+  @media screen and (max-width: $bp-tablet){
+    display: none;
+  }
 }
 
 .format-p {
@@ -30,4 +37,38 @@
 
 .up {
   text-transform: uppercase;
+}
+
+.carusel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: black;
+  flex-shrink: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid black;
+  margin: 0 20px;
+
+  @media screen and (max-width: $bp-tablet){
+    display: none;
+  }
+}
+.carusel-button:hover {
+  background-color: #31261a;
+  fill: white;
+  transition: color 0.3s;
+}
+
+.carusel-button:last-child {
+  transform: rotate(180deg);
+}
+
+.sec-3-carusel {
+  align-items: center;
+  justify-content: space-around;
 }

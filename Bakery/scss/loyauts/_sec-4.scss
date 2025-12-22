@@ -8,6 +8,11 @@
   text-align: center;
   margin-bottom: 200px;
   flex-wrap: wrap;
+
+  @media screen and (max-width: $bp-mobile) {
+    font-size: 32px;
+    margin-bottom: 50px;
+  }
 }
 .shefs span {
   color: var(--dark-green-color);
@@ -19,21 +24,21 @@
   width: 353px;
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: $bp-tablet) {
+    display: none;
+  }
 }
 
 .shefs span::before {
   position: absolute;
   left: 50px;
   bottom: 24px;
-  /* top: 24px; */
-  /* top: 150px; */
 }
 .shefs span::after {
   position: absolute;
   right: 50px;
   bottom: 24px;
-  /* top: 24px; */
-  /* top: 0px; */
 }
 
 .names {
@@ -46,40 +51,46 @@
   box-shadow:
     -16px 16px 0 0 var(--backgroud-color),
     -16px 16px 0 2px #a18268;
+
+  @media screen and (max-width: $bp-mobile) {
+    width: 150px;
+    height: 258px;
+    box-shadow:
+      -14px 14px 0 0 var(--backgroud-color),
+      -14px 14px 0 2px #a18268;
+  }
 }
 
 .sec-3-info {
   justify-content: space-around;
+
+  @media screen and (max-width: $bp-tablet) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-direction: column;
+    gap: 100px;
+  }
 }
+
+.main-shefs {
+  @media screen and (max-width: $bp-tablet) {
+    margin-bottom: 50px;
+    justify-content: center;
+    display: flex;
+    // margin: 0;
+    padding: 0;
+
+    @media screen and (max-width: $bp-mobile) {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      padding: 0;
+    }
+  }
+}
+
 .text-left {
   margin-left: 30px;
-}
-
-.carusel-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  fill: black;
-  flex-shrink: 0;
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
-  border: 1px solid black;
-}
-.carusel-button:hover {
-  background-color: #31261a;
-  fill: white;
-  transition: color 0.3s;
-}
-
-.carusel-button:last-child {
-  transform: rotate(180deg);
-}
-
-.sec-3-carusel {
-  align-items: center;
-  justify-content: space-around;
 }
