@@ -11,6 +11,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--backgroud-color);
+  overflow-x: hidden;
 }
 .flex {
   display: flex;

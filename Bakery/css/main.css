@@ -9,6 +9,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--backgroud-color);
+  overflow-x: hidden;
 }
 
 .flex {
@@ -90,6 +91,7 @@ footer {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+  overflow: hidden;
 }
 
 footer::after,
@@ -150,6 +152,7 @@ footer::after {
   width: 100%;
   align-items: center;
   max-width: 100%;
+  box-sizing: border-box;
   /* justify-content: space-between; */
   /* text-align: center; */
   padding: 20px 40px;
@@ -275,7 +278,7 @@ nav {
 
 .modal::after {
   content: "";
-  position: absolute;
+  overflow: hidden;
   background-image: url(/img/Group\ 4941.png);
   right: 0;
   bottom: 0;
@@ -379,11 +382,11 @@ h1 span {
 .sec3-cards {
   gap: 80px;
 }
-.sec3-cards-cards div {
+.sec3-cards div {
   transition: transform 0.3s;
   position: relative;
 }
-.sec3-cards-cards div-cards div:hover {
+.sec3-cards div:hover {
   transform: scale(1.05);
 }
 
@@ -585,9 +588,13 @@ h1 span {
 }
 
 iframe {
-  flex-shrink: 0;
-  border: none;
-  border-radius: 10px;
+  flex-shrink: 1;
+}
+@media (max-width: 1080px) {
+  iframe iframe {
+    width: 100%;
+    height: 300px;
+  }
 }
 
 .politic {

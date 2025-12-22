@@ -5,6 +5,7 @@
   width: 100%;
   align-items: center;
   max-width: 100%;
+  box-sizing: border-box;
   /* justify-content: space-between; */
   /* text-align: center; */
   padding: 20px 40px;
@@ -63,7 +64,7 @@
   }
   &__burger{
     display: none;
-    
+
     @media screen and (max-width: $bp-desktop){
       display: block;
       cursor: pointer;

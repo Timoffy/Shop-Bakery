@@ -1,13 +1,13 @@
 .sec3-cards {
   gap: 80px;
 
-  &-cards div {
+  & div {
     transition: transform 0.3s;
     position: relative;
+  }
 
-    &-cards div:hover {
-      transform: scale(1.05);
-    }
+  & div:hover {
+    transform: scale(1.05);
   }
 }
 

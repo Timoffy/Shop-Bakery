@@ -49,7 +49,8 @@
 
 .modal::after {
   content: "";
-  position: absolute;
+  // position: absolute;
+  overflow: hidden;
   background-image: url(/img/Group\ 4941.png);
   right: 0;
   bottom: 0;
