@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header class="flex">
+    <header class="header flex">
         <div class="heaeder-inner container flex">
             <div class="header-nav-list flex">
                 <a href="/">
@@ -35,6 +35,28 @@
                 </nav>
             </div>
             <div class="header-btn modal-btn-open"><a href="#">Замовити дзвінок</a></div>
+            <button class="header__burger menu-btn-open" type="button">
+                <svg width="20" height="14">
+                    <use href="/img/burger-menu.svg#icon-burger"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu">
+                <button class="menu-btn-close" type="button">
+                    <svg>
+                        <use href="/img/close_cross.svg#icon-cross" class="close-burger"></use>
+                    </svg>
+                </button>
+                <div class="mobile-position">
+                    <img src="/img/black-logo.svg" alt="logo">
+                    <ul class="mobile-menu-list  flex">
+                        <li><a href="#">Наші традиції</a></li>
+                        <li><a href="#">Шеф-кухарі</a></li>
+                        <li><a href="#">Формати</a></li>
+                        <li><a href="#">Контакти</a></li>
+                    </ul>
+                    <img src="/img/Group 4941.png" alt="bread" class="mobile-menu-bread">
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -206,7 +228,8 @@
         </div>
     </div>
 
-    <script src="/js/script.js"></script>
+    <script src="/js/mobile_open.js"></script>
+    <script src="/js/modal.js"></script>
 </body>
 
 </html>
