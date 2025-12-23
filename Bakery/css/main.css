@@ -492,11 +492,7 @@ h1 span {
   gap: 80px;
 }
 .sec3-cards div {
-  transition: transform 0.3s;
   position: relative;
-}
-.sec3-cards div:hover {
-  transform: scale(1.05);
 }
 
 @media screen and (max-width: 768px) {

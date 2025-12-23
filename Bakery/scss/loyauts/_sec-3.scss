@@ -2,14 +2,8 @@
   gap: 80px;
 
   & div {
-    transition: transform 0.3s;
     position: relative;
   }
-
-  & div:hover {
-    transform: scale(1.05);
-  }
-
 }
 
 .sec3-cards div:not(:first-child){
